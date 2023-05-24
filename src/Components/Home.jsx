@@ -1,6 +1,5 @@
 import Navbar from "./Navbar";
 import "./Styles.css";
-import BackgroundImage from "../assets/home-banner-background.png";
 import PlateImage from "../assets/home-banner-image.png";
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 
@@ -9,9 +8,6 @@ function Home() {
     <div className="home-container">
       <Navbar />
       <div className="home-banner">
-        <div className="home-banner-image-container">
-          <img src={BackgroundImage} />
-        </div>
         <div className="content">
           <h1 className="primary-text">Your Favourite Fruit Delivered Hot & Fresh</h1>
           <p className="secondary-text">
@@ -19,9 +15,7 @@ function Home() {
           </p>
           <button className="primary-button">Order Now <ArrowForwardIcon/> </button>
         </div>
-        <div className="home-plate-image-container">
-          <img src={PlateImage} />
-        </div>
+          <img src={PlateImage} className="home-plate-image-container"/>
       </div>
       
     </div>
